@@ -2,6 +2,7 @@ const express = require('express');
 const { stat } = require('fs');
 const { set } = require('mongoose');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 
@@ -12,6 +13,12 @@ app.use(express.json());
 
 const connectDB = require('./config/db');
 connectDB();
+
+//Cors
+const corsOptions = {
+    origin: process.env.ALLOWED_CLIENTS.split(',');
+}
+app.use(cors(corsOptions));
 
 //Template engine
 app.set('views', path.join(__dirname, '/views'));
