@@ -18,7 +18,9 @@ connectDB();
 const corsOptions = {
     origin: process.env.ALLOWED_CLIENTS.split(',')
 }
-app.use(cors(corsOptions));
+
+//app.use(cors(corsOptions));
+app.use(cors());
 
 //Template engine
 app.set('views', path.join(__dirname, '/views'));
