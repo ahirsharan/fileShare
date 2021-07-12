@@ -16,11 +16,12 @@ connectDB();
 
 //Cors
 const corsOptions = {
-    origin: process.env.ALLOWED_CLIENTS.split(',')
+    //origin: process.env.ALLOWED_CLIENTS.split(',')
+    origin : "https://ahirsharan.github.io/fileTransfer/"
 }
 
-//app.use(cors(corsOptions));
-app.use(cors());
+app.use(cors(corsOptions));
+//app.use(cors());
 
 //Template engine
 app.set('views', path.join(__dirname, '/views'));
