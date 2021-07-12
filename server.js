@@ -17,7 +17,7 @@ connectDB();
 //Cors
 const corsOptions = {
     //origin: process.env.ALLOWED_CLIENTS.split(',')
-    origin : "https://ahirsharan.github.io/fileTransfer/"
+    origin : "https://ahirsharan.github.io"
 }
 
 app.use(cors(corsOptions));
