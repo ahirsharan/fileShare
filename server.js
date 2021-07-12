@@ -16,7 +16,7 @@ connectDB();
 
 //Cors
 const corsOptions = {
-    origin: `"${process.env.ALLOWED_CLIENT}"`
+    origin: String(`"${process.env.ALLOWED_CLIENT}"`)
 }
 
 // Allowing backend connection with only our fronted url (can be a localhost)
