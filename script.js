@@ -11,8 +11,8 @@ async function fetchData() {
     if (files.length) {
         for (const file of files) {
             try {
-                fs.unlinkSync(file.path);
                 await file.remove();
+                fs.unlinkSync(file.path);
                 console.log(`Succesfully deleted ${file.filename}`);
             } catch (err) {
                 console.log(`Error while deleting file ${err}`);
@@ -22,4 +22,4 @@ async function fetchData() {
     }
 }
 
-fetchData().then(process.exit());
+fetchData().then(process.exit);
