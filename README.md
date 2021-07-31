@@ -5,7 +5,7 @@ This repository contains the backend code for the fileShare application.
 
 It has been deployed on Heroku.
 
-![alt-text](https://i.ibb.co/rwfLcvK/up1.jpg) 
+![alt-text](https://i.ibb.co/0Chdj5P/vv.jpg) 
 
 Frontend: [https://github.com/ahirsharan/fileTransfer](https://github.com/ahirsharan/fileTransfer)
 
