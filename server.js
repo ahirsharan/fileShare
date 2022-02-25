@@ -17,7 +17,7 @@ connectDB();
 //Cors
 const corsOptions = {
     //origin: String(`"${process.env.ALLOWED_CLIENT}"`)
-    origin: "https://ahirsharan.github.io"
+    origin: ["https://ahirsharan.github.io", "https://nahir29.github.io"],
 }
 
 // Allowing backend connection with only our fronted url (can be a localhost)
